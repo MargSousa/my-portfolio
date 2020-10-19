@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #121212 !important;
+  padding: 20px 50px 20px 30px;
+  color: white;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+#header-link {
+  color: white;
+  font-weight: 500;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+
+#header-link:hover {
+  color: orange;
+}
+
+/* @media(max-width: 768px) {
+} */
