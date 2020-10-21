@@ -68,45 +68,39 @@
   font-weight: 500;
   color: rgb(14, 14, 14);
   background-color: #e8e8e8;
-  /* border: solid 3px #e8e8e8; */
 }
 
-/* .project-card:hover {
-  border: solid 3px grey;
-} */
-
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.project-description {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.project-date {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.project-keywords {
+  font-style: italic;
+  font-size: 13px;
+}
 .project-image {
   text-align: center;
+  margin-bottom: 20px;
 }
 .project-image img {
   width: 100%;
   height: auto;
 }
-.project-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 15px 0px 0px 0px;
-}
-.project-description,
-.project-date {
-  font-size: 14px;
-  margin-top: 5px;
-}
-.project-date {
-  font-size: 13px;
-}
-.project-keywords {
-  font-style: italic;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
 @media(max-width: 768px) {
   .portfolio-main {
     width: 80%;
   }
   .portfolio-title {
     font-size: 22px;
+    margin: 10px 0px;
   }
   .portfolio-subtitle {
     font-size: 16px;

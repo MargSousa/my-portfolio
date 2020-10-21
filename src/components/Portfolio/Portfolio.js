@@ -19,7 +19,7 @@ const Portfolio = () => {
       description: "Implementation of the front-end and back-end of the client’s new website. Also a Backoffice was design and developed by us to meet the client’s needs to update the website content.",
       image: AGP,
       date: "May ~ October 2020",
-      keywords: "HTML, CSS, Bootstrap, JavaScript, React, Responsive, Backoffice, NodeJs, Nodemailer, Express, mySQL, Github, Git, VSCode, Project, Freelance, Remote, Full-stack",
+      keywords: "HTML, CSS, Bootstrap, JavaScript, React, Responsive, Backoffice, NodeJs, Nodemailer, Express, mySQL, Github, Git, VSCode, Group Project, Freelance, Remote, Full-stack",
       link: "https://agp-projeto-heroku.herokuapp.com/"
     },
     {
@@ -28,7 +28,7 @@ const Portfolio = () => {
       description: "Responsive website development about the city of Porto. The user can explore what the city has to offer from restaurants, hotels, monuments, event, among other informations.",
       image: Porto,
       date: "February 2020",
-      keywords: "HTML, CSS, Bootstrap, JavaScript, Responsive, Github Pages, Github, Git, VSCode, Project, Remote, Front-end",
+      keywords: "HTML, CSS, Bootstrap, JavaScript, Responsive, Github Pages, Github, Git, VSCode, Group Project, Remote, Front-end, Wild Code School",
       link: "https://margsousa.github.io/wcsPorto/"
     },
     {
@@ -37,7 +37,7 @@ const Portfolio = () => {
       description: "Dynamic webapp where the user can search by ingredient or drink name and it is offered a list of recipes that can then be shared with friends by email or social media.",
       image: CocktailAlchimia,
       date: "March 2020",
-      keywords: "HTML, CSS, Bootstrap, JavaScript, React, API, Responsive, Netlify, Github, Git, VSCode, Project, Remote, Front-end",
+      keywords: "HTML, CSS, Bootstrap, JavaScript, React, API, Responsive, Netlify, Github, Git, VSCode, Group Project, Remote, Front-end, Wild Code School",
       link: "https://cocktailalchimia.netlify.app/"
     },
     {
@@ -46,7 +46,7 @@ const Portfolio = () => {
       description: "Dynamic webapp where the user can search by ingredient or drink name and it is offered a list of recipes that can then be shared by email or social media.",
       image: charactersProject,
       date: "May 2020",
-      keywords: "HTML, CSS, JavaScript, React, API, Responsive, Github, Git, VSCode, Project, Hackathon, Remote, Full-stack",
+      keywords: "HTML, CSS, JavaScript, React, API, Responsive, Github, Git, VSCode, Group Project, Hackathon, Remote, Full-stack, Wild Code School",
       link: ""
     },
     {
@@ -55,16 +55,16 @@ const Portfolio = () => {
       description: "Hackathon “Travel from your couch” app development in 36h using an API. The user can virtually travel around the world by choosing one of 101 webcams available from 101 countries.",
       image: TakeALook,
       date: "April 2020",
-      keywords: "HTML, CSS, Bootstrap, JavaScript, React, API, Github Pages, Responsive, Github, Git, VSCode, Project, Hackathon, Remote, Front-end",
+      keywords: "HTML, CSS, Bootstrap, JavaScript, React, API, Github Pages, Responsive, Github, Git, VSCode, Group Project, Hackathon, Remote, Front-end, Wild Code School",
       link: "https://antoniobranco-coder.github.io/Hackaton1/"
     },
     {
       id: 5,
       title: "myWeather",
-      description: "Weather react app development. The user is given a weekly forecast of their current location but it can also search the weather of all over the world. The temperature can also be displayed in degrees Celsius or degrees Fahrenheit.",
+      description: "Weather react app development. The user is given a weekly forecast of their current location but it can also search the weather of all over the world.",
       image: myWeather,
       date: "June 2019",
-      keywords: "HTML, CSS, Bootstrap, JavaScript, React, Responsive, Netlify, Github, Git, VSCode, Front-end",
+      keywords: "HTML, CSS, Bootstrap, JavaScript, React, Responsive, Netlify, Github, Git, VSCode, Front-end, SheCodesPlus",
       link: "https://margsousa-myweather-reactapp.netlify.app/"
     },
     {
@@ -115,12 +115,12 @@ const Portfolio = () => {
           <div className="portfolio-list">
             {projects.map((project) => 
               <div className="project-card" key={project.id}>
-                <div className="project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
                 <div className="project-title">{project.title}</div>
                 <div className="project-date">{project.date}</div>
                 <div className="project-description">{project.description}</div>
+                <div className="project-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
                 <div className="project-keywords">Keywords: {project.keywords}</div>
               </div>
             )}
